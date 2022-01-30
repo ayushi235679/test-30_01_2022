@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script class="jsbin" src="http://ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
+<meta charset=utf-8 />
+<title>JS </title>
+<style>
+  table,tr,td,th{
+	  width: 20%;
+	 
+	  padding-left: 20px;
+	  padding-right: 20px;
+	  padding-bottom: 10px;
+	  padding-top: 10px;
+  }
+</style>
+</head>
+<body>
+  <h1>CONTACT DETAILS</h1>
+  <form>
+    <input type="text" id="name" name="name" value="" placeholder="name">
+    <input type="text" id="email"name="email" value="" placeholder="email">
+    
+    <input type="text"id="number" name="number" value="" placeholder="number">
+    </form><button type="button" 
+      id="updateButton" 
+      class="btn btn-primary" 
+      onclick="productUpdate();">Add</button>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <table id="productTable" class="table table-bordered table-condensed table-striped">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>email</th>
+                            <th>number</th>
+                          <th>Action</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="main.js"></script>
+</html>
